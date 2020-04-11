@@ -177,7 +177,7 @@ mkdir -p ~/.icons && cd ~/.icons && git clone https://github.com/rolfposchmann/p
 cd ~/.icons/paper-icon-theme/
 sudo apt install -y meson
 meson "build" --prefix=/usr
-#install to /usr/
+#install to /usr/share/icons/Paper
 sudo ninja -C "build" install
 
 #numix circle icon

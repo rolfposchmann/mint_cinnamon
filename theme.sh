@@ -13,6 +13,30 @@ breeze coursor
 dark theme
 
 
+#mac like: https://www.reddit.com/r/unixporn/comments/ehlads/muttercinnamon_less_is_more_linux_mint_cinnamon/
+https://github.com/vinceliuice/Tela-icon-theme
+https://github.com/vinceliuice/Mojave-gtk-theme
+https://addons.mozilla.org/en-GB/firefox/addon/teal-black-fox/
+
+    Wallpaper: Life and Death
+
+    GTK: McMojave (Dark theme)
+
+    Icons: Tela
+
+    Desklet: Default Cinnamon Disk space/RAM usage desklet
+
+    Dock: Plank
+
+    Other: Browser is Firefox with the Teal Black Fox theme
+    
+#Tela icons
+mkdir -p ~/.icons && cd ~/.icons && git clone https://github.com/vinceliuice/Tela-icon-theme.git
+cd Tela-icon-theme/
+./install.sh
+
+
+
 
 ###############################
 #andere Themes

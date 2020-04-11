@@ -7,6 +7,9 @@
 #- Display Auflösung
 #- tmp auf tmpfs
 
+#Wallpaper:
+#https://uhdpixel.com/wall/tag/minimalist/
+
 #1) Anwendungspaketquellen
 #2) Firefox: Google Suche
 
@@ -123,6 +126,18 @@ sudo fc-cache -f -v
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo $SHELL
 sudo chsh -s $(which zsh)
+
+#https://github.com/sindresorhus/pure
+mkdir -p "$HOME/.zsh"
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+# .zshrc
+nano ~/.zshrc
+ZSH_THEME=""
+fpath+=$HOME/.zsh/pure
+# .zshrc
+autoload -U promptinit; promptinit
+prompt pure
+
 
 nano ~/.zshrc
 #default: ZSH_THEME="robbyrussell"

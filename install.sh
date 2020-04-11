@@ -148,18 +148,34 @@ plugins=(git bundler osx rake ruby)
 
 ############################
 # Console Colors:
-https://github.com/Mayccoll/Gogh
+#https://github.com/Mayccoll/Gogh
 sudo apt-get install dconf-cli uuid-runtime
 bash -c  "$(wget -qO- https://git.io/vQgMr)"
+
+16 Blazer
+22 chalk
+23 chalkboard
 33 desert
+35 dracula
+153 Solarized Dark
+179 Ura
+184 Vs Code Dark Plus
+
+16 22 23 33 35 153 179 184
+
+#oder
+#https://github.com/carloscuesta/materialshell/blob/master/README.md#oh-my-zsh
+curl -L -o ~/.oh-my-zsh/custom/themes/materialshell.zsh-theme https://raw.githubusercontent.com/carloscuesta/materialshell/master/materialshell.zsh
+
+ZSH_THEME="materialshell"
 
 #############################
 # Icons
 
 #paper icons
 mkdir -p ~/.icons && cd ~/.icons && git clone https://github.com/rolfposchmann/paper-icon-theme.git
-cd paper-icon-theme/
-sudo apt -y install meson
+cd ~/.icons/paper-icon-theme/
+sudo apt install -y meson
 meson "build" --prefix=/usr
 #install to /usr/
 sudo ninja -C "build" install
